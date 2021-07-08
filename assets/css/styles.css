@@ -1,0 +1,160 @@
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+ /* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root{
+    
+    --BrightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    
+    --paragraphs:hsla(0, 0%, 100%, 0.75);
+    --backgroundHeadingButtons:hsl(0, 0%, 95%);
+
+    --lexeDecaFont:'Lexend Deca', sans-serif;
+    --shoulderDisplayFont:'Big Shoulders Display', cursive;
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: var(--backgroundHeadingButtons);
+    font-size: 15px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+main{
+    display:flex;
+    flex-direction:row;
+    margin:8rem;
+    padding:2rem;
+    width: 60rem;
+    height:auto;
+    color:var(--paragraphs);
+
+}
+
+.card1{
+    background-color: var(--BrightOrange);
+    padding:3rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    -webkit-border-radius: 0.5rem 0rem 0rem 0.5rem;
+    -moz-border-radius: 0.5rem 0rem 0rem 0.5rem;
+    -ms-border-radius: 0.5rem 0rem 0rem 0.5rem;
+    -o-border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+.card2{
+    background-color: var(--darkCyan);
+    padding:3rem;
+}
+.card3{
+    background-color: var(--veryDarkCyan);
+    padding:3rem;
+    border-radius: 0em 0.5rem 0.5rem 0rem;
+    -webkit-border-radius: 0em 0.5rem 0.5rem 0rem;
+    -moz-border-radius: 0em 0.5rem 0.5rem 0rem;
+    -ms-border-radius: 0em 0.5rem 0.5rem 0rem;
+    -o-border-radius: 0em 0.5rem 0.5rem 0rem;
+}
+
+
+.card1 h3, .card2 h3, .card3 h3{
+    font-family:var(--shoulderDisplayFont);
+    text-transform: uppercase;
+    margin-bottom:1.5rem;
+    font-size:2rem;
+    font-weight: 700;
+}
+.card1 p, .card2 p, .card3 p{
+    line-height:1.5rem;
+    margin-bottom: 5.2rem;
+    font-family:var(--lexeDecaFont);
+    font-weight: 400;
+}
+
+.button{
+    padding: 0.8rem 2rem;
+    font-family: var(--lexeDecaFont);
+    font-weight: 700;
+    background-color:var(--backgroundHeadingButtons);
+    border-style:none;
+    cursor:pointer;
+    border-radius:1.5rem;
+    -webkit-border-radius:1.5rem;
+    -moz-border-radius:1.5rem;
+    -ms-border-radius:1.5rem;
+    -o-border-radius:1.5rem;
+    border: 2px solid var(--paragraphs);
+}
+.card1 .button:hover{
+    background-color: var(--BrightOrange);
+    
+    color:white;
+    
+}
+.card2 .button:hover{
+    background-color: var(--darkCyan);
+    color:white;
+
+}
+.card3 .button:hover{
+    background-color: var(--veryDarkCyan);
+    color:white;
+  
+}
+.card1 button{ 
+    color:var(--BrightOrange);
+}
+
+.card2 button{
+    color: var(--darkCyan)
+}
+.card3 button{ 
+    color: var(--veryDarkCyan)
+}
+
+@media screen and (max-width: 768px){
+    body {
+        height: auto;
+        overflow-y: scroll;
+      }
+    main{
+        flex-direction: column;
+        width:20rem;
+    }
+    .card1{
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+        -webkit-border-radius: 0.5rem 0.5rem 0rem 0rem;
+        -moz-border-radius: 0.5rem 0.5rem 0rem 0rem;
+        -ms-border-radius: 0.5rem 0.5rem 0rem 0rem;
+        -o-border-radius: 0.5rem 0.5rem 0rem 0rem;
+    }
+    .card3{
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    -webkit-border-radius: 0rem 0rem 0.5rem 0.5rem;
+    -moz-border-radius: 0rem 0rem 0.5rem 0.5rem;
+    -ms-border-radius: 0rem 0rem 0.5rem 0.5rem;
+    -o-border-radius: 0rem 0rem 0.5rem 0.5rem;
+    }
+}   
+@media screen and (max-width: 280px){
+    body {
+        height: auto;
+        overflow-y: scroll;
+      }
+    main{
+        flex-direction: column;
+        width:15rem;
+    }
+}
