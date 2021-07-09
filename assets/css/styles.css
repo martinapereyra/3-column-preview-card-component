@@ -39,7 +39,7 @@ main{
     flex-direction:row;
     margin:8rem;
     padding:2rem;
-    width: 60rem;
+    width: 70vw;
     height:auto;
     color:var(--paragraphs);
 
@@ -124,14 +124,14 @@ main{
     color: var(--veryDarkCyan)
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1092px){
     body {
         height: auto;
-        overflow-y: scroll;
+    
       }
     main{
         flex-direction: column;
-        width:20rem;
+        width:80vw;
     }
     .card1{
         border-radius: 0.5rem 0.5rem 0rem 0rem;
@@ -148,13 +148,13 @@ main{
     -o-border-radius: 0rem 0rem 0.5rem 0.5rem;
     }
 }   
-@media screen and (max-width: 280px){
+/* @media screen and (max-width: 648px){
     body {
         height: auto;
         overflow-y: scroll;
       }
     main{
         flex-direction: column;
-        width:15rem;
+        width:70vw;
     }
-}
+} */
